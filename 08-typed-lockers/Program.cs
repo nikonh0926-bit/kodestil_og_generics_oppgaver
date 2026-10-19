@@ -1,6 +1,5 @@
 
 Console.WriteLine("Typed Lockers");
-// TODO: Opprett, bruk og test to skap med ulike typeargumenter.
 
 var name = new Locker<string>("Beacon");
 var id = new Locker<int>(42);
