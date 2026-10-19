@@ -6,6 +6,11 @@ Console.WriteLine(result);
 // messages.Add(42);
 // retries = "three";
 // TODO: Utforsk én feillinje om gangen, og legg til en gyldig melding.
+
+messages.Add("en gyldig melding");
+
+Console.WriteLine(messages.Count);
+
 static string RepeatLabel(string message)
 {
     return $"Echo: {message}";

@@ -1,11 +1,10 @@
 public class SignalPrinter
 {
-    public static void PrintStrings(List<string> items)
+    public static void PrintList<T>(List<T> items)
     {
-        foreach (string item in items)
+        foreach (T item in items)
         {
             Console.WriteLine(item);
         }
     }
 }
-// TODO: Generaliser metoden, ikke klassen.

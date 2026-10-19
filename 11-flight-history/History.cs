@@ -6,20 +6,22 @@ public class History<T>
         get
         {
             // TODO: Les antallet fra samlingen.
-            return 0;
+            return _items.Count;
         }
     }
     public void Add(T item)
     {
         // TODO: Oppbevar elementet.
+        _items.Add(item);
     }
     public List<T> GetSnapshot()
     {
         // TODO: Returner en samlingskopi med eksisterende elementer.
-        return new List<T>();
+        return new List<T>(_items);
     }
     public void Clear()
     {
         // TODO: Tøm historikken.
+        _items.Clear();
     }
 }

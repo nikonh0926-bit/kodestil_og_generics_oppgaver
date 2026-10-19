@@ -1,7 +1,18 @@
+
+
 int firstCapacity = 12;
 int firstUsedCapacity = 5;
-Console.WriteLine($"Remaining: {firstCapacity - firstUsedCapacity}");
+
+Console.WriteLine($"Remaining: {CalculateRemainingCapacity(firstCapacity, firstUsedCapacity)}");
+
 int secondCapacity = 20;
 int secondUsedCapacity = 8;
-Console.WriteLine($"Remaining: {secondCapacity - secondUsedCapacity}");
-// TODO: Trekk ut beregningen i en statisk metode.
+
+Console.WriteLine($"Remaining: {CalculateRemainingCapacity(secondCapacity, secondUsedCapacity)}");
+
+
+
+static int CalculateRemainingCapacity(int capacity, int used)
+{
+    return capacity - used;
+}
